@@ -18,8 +18,7 @@
           [macro.units_size_l_sp_kit_frigate_01_macro, 'argon', 40, 10, 100, 0, 0],
           [macro.units_size_l_split_m7m_01_macro,      'argon', 40, 10, 100, 0, 0],
           [macro.units_size_l_te_kit_none_01_macro,    'argon', 40, 10, 100, 0, 0],
-          [macro.units_size_l_terran_m7_01_macro,      'argon', 40, 10, 100, 0, 0],
-          [macro.units_size_l_xenon_ls_02_macro,       'argon', 40, 10, 100, 0, 0]
+          [macro.units_size_l_terran_m7_01_macro,      'argon', 40, 10, 100, 0, 0]
         ]" />
         <set_value name="$ships_l_trade" exact="[
           [macro.units_size_l_kit_container_ter_01_macro,          'argon', 20, 100, 30, 0, 0],
