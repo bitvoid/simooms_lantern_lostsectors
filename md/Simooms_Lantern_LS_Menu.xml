@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mdscript name="Simooms_Lantern_LS_Menu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="md.xsd">
+  <cues>
+    <cue name="SummonShip" instantiate="true" namespace="this">
+      <conditions>
+        <check_any>
+          <event_conversation_next_section sectionprefix="SimoomsLanternLS_summon_ship" />
+          <event_conversation_returned_to_section sectionprefix="SimoomsLanternLS_summon_ship" />
+        </check_any>
+      </conditions>
+      <actions>
+        <!-- Size L ship templates -->
+        <!-- [macro, crew faction, build drones, cargo drones, defence drones, mining drones (ore), mining drones (gas)] -->
+        <set_value name="$ships_l_fight" exact="[
+          [macro.units_size_l_ar_frigate_01_macro,     'argon', 40, 10, 100, 0, 0],
+          [macro.units_size_l_boron_01_macro,          'argon', 40, 10, 100, 0, 0],
+          [macro.units_size_l_kit_carrier_03_macro,    'argon', 40, 10, 100, 0, 0],
+          [macro.units_size_l_sp_kit_frigate_01_macro, 'argon', 40, 10, 100, 0, 0],
+          [macro.units_size_l_split_m7m_01_macro,      'argon', 40, 10, 100, 0, 0],
+          [macro.units_size_l_te_kit_none_01_macro,    'argon', 40, 10, 100, 0, 0],
+          [macro.units_size_l_terran_m7_01_macro,      'argon', 40, 10, 100, 0, 0],
+          [macro.units_size_l_xenon_ls_02_macro,       'argon', 40, 10, 100, 0, 0]
+        ]" />
+        <set_value name="$ships_l_trade" exact="[
+          [macro.units_size_l_kit_container_ter_01_macro,          'argon', 20, 100, 30, 0, 0],
+          [macro.units_size_l_ls_freighter_macro,                  'argon', 20, 100, 30, 0, 0],
+          [macro.units_size_l_ls_terran_bulk_01_macro,             'argon', 20, 100, 30, 0, 0],
+          [macro.units_size_l_ls_terran_bulk_liquid_01_macro,      'argon', 20, 100, 30, 0, 0],
+          [macro.units_size_l_ls_terran_container_01_macro,        'argon', 20, 100, 30, 0, 0],
+          [macro.units_size_l_ls_terran_container_energy_01_macro, 'argon', 20, 100, 30, 0, 0],
+          [macro.units_size_l_ls_terran_energy_01_macro,           'argon', 20, 100, 30, 0, 0],
+          [macro.units_size_l_ls_terran_liquid_01_macro,           'argon', 20, 100, 30, 0, 0]
+        ]" />
+        <set_value name="$ships_l_mine" exact="[
+          [macro.units_size_l_ls_terran_bulk_collector_macro,   'argon', 20, 10, 20, 100, 0],
+          [macro.units_size_l_ls_terran_liquid_collector_macro, 'argon', 20, 10, 20, 0, 100],
+          [macro.units_size_l_sp_kit_collector_bulk_macro,      'argon', 20, 10, 20, 100, 0],
+          [macro.units_size_l_sp_kit_collector_liquid_macro,    'argon', 20, 10, 20, 0, 100]
+        ]" />
+        <set_value name="$ships_l_build" exact="[
+        ]" />
+        <set_value name="$ships_l_other" exact="[
+        ]" />
+        <!-- Size XL ship templates -->
+        <!-- [macro, crew faction, build drones, cargo drones, defence drones, mining drones (ore), mining drones (gas)] -->
+        <set_value name="$ships_xl_fight" exact="[
+          [macro.units_size_xl_khaak_01_macro,            'argon', 40, 10, 100, 0, 0],
+          [macro.units_size_xl_ls_kit_destroyer_01_macro, 'argon', 40, 10, 100, 0, 0],
+          [macro.units_size_xl_old_carrier_01_macro,      'argon', 40, 10, 100, 0, 0],
+          [macro.units_size_xl_paranid_01_macro,          'argon', 40, 10, 100, 0, 0],
+          [macro.units_size_xl_pir_destroyer_01_macro,    'argon', 40, 10, 100, 0, 0],
+          [macro.units_size_xl_pir_destroyer_02_macro,    'argon', 40, 10, 100, 0, 0],
+          [macro.units_size_xl_te_kit_military_01_macro,  'argon', 40, 10, 100, 0, 0],
+          [macro.units_size_xl_ter_destroyer_01_macro,    'argon', 40, 10, 100, 0, 0],
+          [macro.units_size_xl_ter_destroyer_02_macro,    'argon', 40, 10, 100, 0, 0],
+          [macro.units_size_xl_terran_m1_macro,           'argon', 40, 10, 100, 0, 0]
+        ]" />
+        <set_value name="$ships_xl_trade" exact="[
+          [macro.units_size_xl_ls_kit_transporter_01_macro,  'argon', 20, 100, 30, 0, 0],
+          [macro.units_size_xl_ls_kit_transporter_02_macro,  'argon', 20, 100, 30, 0, 0],
+          [macro.units_size_xl_pir_kit_transporter_01_macro, 'argon', 20, 100, 30, 0, 0],
+          [macro.units_size_xl_split_transport_macro,        'argon', 20, 100, 30, 0, 0],
+          [macro.units_size_xl_ter_kit_transporter_01_macro, 'argon', 20, 100, 30, 0, 0],
+          [macro.units_size_xl_ter_transporter_macro,        'argon', 20, 100, 30, 0, 0],
+          [macro.units_size_xl_terran_tl_macro,              'argon', 20, 100, 30, 0, 0]
+        ]" />
+        <set_value name="$ships_xl_mine" exact="[
+          [macro.units_size_xl_ls_kit_miner_01_macro, 'argon', 20, 10, 20, 100, 0]
+        ]" />
+        <set_value name="$ships_xl_build" exact="[
+          [macro.units_size_xl_builder_ship_ls_macro,        'argon', 20, 10, 20, 50, 50],
+          [macro.units_size_xl_builder_ship_ls_te_macro,     'argon', 20, 10, 20, 50, 50],
+          [macro.units_size_xl_builder_ship_ls_terran_macro, 'argon', 20, 10, 20, 50, 50],
+          [macro.units_size_xl_builder_ship_sp_macro,        'argon', 20, 10, 20, 50, 50]
+        ]" />
+        <set_value name="$ships_xl_other" exact="[
+        ]" />
+        <do_if value="event.param == 'SimoomsLanternLS_summon_ship'">
+          <add_player_choice_sub text="'Size L'" position="top_left" section="SimoomsLanternLS_summon_ship_size_l" comment="Size L" />
+          <add_player_choice_sub text="'Size XL'" position="left" section="SimoomsLanternLS_summon_ship_size_xl" comment="Size XL" />
+          <add_player_choice_return text="{1002,20}" position="bottom_right" comment="(Back)" />
+        </do_if>
+        <do_elseif value="event.param == 'SimoomsLanternLS_summon_ship_size_l'">
+          <add_player_choice_sub text="'Fight'" position="top_left" section="SimoomsLanternLS_summon_ship_select" choiceparam="[$ships_l_fight, 0]" selectable="$ships_l_fight.count" />
+          <add_player_choice_sub text="'Trade'" position="left" section="SimoomsLanternLS_summon_ship_select" choiceparam="[$ships_l_trade, 0]" selectable="$ships_l_trade.count" />
+          <add_player_choice_sub text="'Mine'" position="bottom_left" section="SimoomsLanternLS_summon_ship_select" choiceparam="[$ships_l_mine, 0]" selectable="$ships_l_mine.count" />
+          <add_player_choice_sub text="'Build'" position="top_right" section="SimoomsLanternLS_summon_ship_select" choiceparam="[$ships_l_build, 0]" selectable="$ships_l_build.count" />
+          <add_player_choice_sub text="'Other'" position="right" section="SimoomsLanternLS_summon_ship_select" choiceparam="[$ships_l_other, 0]" selectable="$ships_l_other.count" />
+          <add_player_choice_return text="{1002,20}" comment="(Back)" />
+        </do_elseif>
+        <do_elseif value="event.param == 'SimoomsLanternLS_summon_ship_size_xl'">
+          <add_player_choice_sub text="'Fight'" position="top_left" section="SimoomsLanternLS_summon_ship_select" choiceparam="[$ships_xl_fight, 0]" selectable="$ships_xl_fight.count" />
+          <add_player_choice_sub text="'Trade'" position="left" section="SimoomsLanternLS_summon_ship_select" choiceparam="[$ships_xl_trade, 0]" selectable="$ships_xl_trade.count" />
+          <add_player_choice_sub text="'Mine'" position="bottom_left" section="SimoomsLanternLS_summon_ship_select" choiceparam="[$ships_xl_mine, 0]" selectable="$ships_xl_mine.count" />
+          <add_player_choice_sub text="'Build'" position="top_right" section="SimoomsLanternLS_summon_ship_select" choiceparam="[$ships_xl_build, 0]" selectable="$ships_xl_build.count" />
+          <add_player_choice_sub text="'Other'" position="right" section="SimoomsLanternLS_summon_ship_select" choiceparam="[$ships_xl_other, 0]" selectable="$ships_xl_other.count" />
+          <add_player_choice_return text="{1002,20}" comment="(Back)" />
+        </do_elseif>
+        <do_elseif value="event.param == 'SimoomsLanternLS_summon_ship_select'">
+          <debug_text text="'Event: %s param: %s param2: %s param3: %s'.[event.name, event.param, event.param2, event.param3]" chance="0" filter="general" />
+          <do_if value="event.name" exact="'event_conversation_returned_to_section'">
+            <set_value name="$ships" exact="if event.param3 then event.param3.{1} else []" />
+            <set_value name="$page" exact="if event.param3 then event.param3.{2} else 0" />
+          </do_if>
+          <do_else>
+            <set_value name="$ships" exact="event.param2.{1}" />
+            <set_value name="$page" exact="event.param2.{2}" />
+          </do_else>
+          <do_if value="$ships.count">
+            <set_value name="$current" exact="$ships.clone" />
+            <do_all exact="$page * 4">
+              <remove_value name="$current.{1}" />
+            </do_all>
+            <add_player_choice_subconv text="$current.{1}.{1}.name" tooltip="$current.{1}.{1}.id" position="top_left" conversation="SimoomsLantern_summon_ship_player" convparam="$current.{1}" actor="player.computer" chance="100 * ($current.count ge 1)" />
+            <add_player_choice_subconv text="$current.{2}.{1}.name" tooltip="$current.{2}.{1}.id" position="left" conversation="SimoomsLantern_summon_ship_player" convparam="$current.{2}" actor="player.computer" chance="100 * ($current.count ge 2)" />
+            <add_player_choice_subconv text="$current.{3}.{1}.name" tooltip="$current.{3}.{1}.id" position="bottom_left" conversation="SimoomsLantern_summon_ship_player" convparam="$current.{3}" actor="player.computer" chance="100 * ($current.count ge 3)" />
+            <add_player_choice_subconv text="$current.{4}.{1}.name" tooltip="$current.{4}.{1}.id" position="top_right" conversation="SimoomsLantern_summon_ship_player" convparam="$current.{4}" actor="player.computer" chance="100 * ($current.count ge 4)" />
+            <do_if value="$current.count le 5">
+              <add_player_choice_subconv text="$current.{5}.{1}.name" tooltip="$current.{5}.{1}.id" position="right" conversation="SimoomsLantern_summon_ship_player" convparam="$current.{5}" actor="player.computer" chance="100 * ($current.count == 5)" />
+            </do_if>
+            <do_else>
+              <add_player_choice_sub text="'More...'" position="right" section="SimoomsLanternLS_summon_ship_select" choiceparam="[$ships, $page + 1]" />
+            </do_else>
+            <add_player_choice_return text="{1002,20}" position="bottom_right" returnparam="[$ships, $page - 1]" comment="(Back)" />
+            <remove_value name="$current" />
+          </do_if>
+          <remove_value name="$ships" />
+          <remove_value name="$page" />
+          <remove_value name="$ships_l_fight" />
+          <remove_value name="$ships_l_trade" />
+          <remove_value name="$ships_l_mine" />
+          <remove_value name="$ships_l_build" />
+          <remove_value name="$ships_l_other" />
+          <remove_value name="$ships_xl_fight" />
+          <remove_value name="$ships_xl_trade" />
+          <remove_value name="$ships_xl_mine" />
+          <remove_value name="$ships_xl_build" />
+          <remove_value name="$ships_xl_other" />
+        </do_elseif>
+      </actions>
+    </cue>
+  </cues>
+</mdscript>
