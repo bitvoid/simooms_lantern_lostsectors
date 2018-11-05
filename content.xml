@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<content id="simooms_lantern_lostsectors" name="Simoom's Lantern: Lost Sectors" author="bitvoid" version="011" date="2018-11-04" save="false">
+<content id="simooms_lantern_lostsectors" name="Simoom's Lantern: Lost Sectors" author="bitvoid" version="020" date="2018-11-04" save="false">
   <dependency version="430" />
   <dependency id="ws_684926232" version="099" />
   <dependency id="lostsectors" version="130" />
