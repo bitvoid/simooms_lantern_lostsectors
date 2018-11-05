@@ -74,10 +74,43 @@
           ],
           $size_m = table[
             $fight = [
+              [macro.units_size_m_argon_01_macro,           'argon', null],
+              [macro.units_size_m_argon_02_macro,           'argon', null],
+              [macro.units_size_m_canteran_03_macro,        'argon', null],
+              [macro.units_size_m_khaak_01_macro,           'argon', null],
+              [macro.units_size_m_khaak_03_macro,           'argon', null],
+              [macro.units_size_m_ls_terran_m6_01_macro,    'argon', null],
+              [macro.units_size_m_miner_fighter_01_macro,   'argon', null],
+              [macro.units_size_m_nathan_military_macro,    'argon', null],
+              [macro.units_size_m_pirate_fighter_macro,     'argon', null],
+              [macro.units_size_m_split_m6_macro,           'argon', null],
+              [macro.units_size_m_te_fighter_01_macro,      'argon', null],
+              [macro.units_size_m_xenon_bomber_ls_01_macro, 'argon', null]
             ],
             $trade = [
+              [macro.units_size_m_ls_terran_01_macro,                 'argon', null],
+              [macro.units_size_m_ls_terran_02_macro,                 'argon', null],
+              [macro.units_size_m_ls_terran_03_macro,                 'argon', null],
+              [macro.units_size_m_ls_terran_04_macro,                 'argon', null],
+              [macro.units_size_m_nathan_bulk_transporter_macro,      'argon', null],
+              [macro.units_size_m_nathan_container_transporter_macro, 'argon', null],
+              [macro.units_size_m_nathan_energy_transporter_macro,    'argon', null],
+              [macro.units_size_m_nathan_liquid_transporter_macro,    'argon', null],
+              [macro.units_size_m_pirate_transporter_macro,           'argon', null],
+              [macro.units_size_m_silicon_transporter_macro,          'argon', null],
+              [macro.units_size_m_split_bulk_transporter_macro,       'argon', null],
+              [macro.units_size_m_split_container_transporter_macro,  'argon', null],
+              [macro.units_size_m_split_energy_transporter_macro,     'argon', null],
+              [macro.units_size_m_split_liquid_transporter_macro,     'argon', null]
             ],
             $mine = [
+              [macro.units_size_m_canteran_collector_liquid_macro, 'argon', 'gas'],
+              [macro.units_size_m_canteran_collector_macro,        'argon', 'ore'],
+              [macro.units_size_m_khaak_02_macro,                  'argon', 'ore'],
+              [macro.units_size_m_ls_miner_01_macro,               'argon', 'ore'],
+              [macro.units_size_m_ls_miner_02_macro,               'argon', 'gas'],
+              [macro.units_size_m_split_bulk_collector_macro,      'argon', 'ore'],
+              [macro.units_size_m_split_liquid_collector_macro,    'argon', 'gas']
             ],
             $build = [
             ],
@@ -86,8 +119,31 @@
           ],
           $size_s = table[
             $fight = [
+              [macro.units_size_s_boron_m3_macro,                    'argon', null],
+              [macro.units_size_s_canteran_fighter_02_macro,         'argon', null],
+              [macro.units_size_s_khaak_05_macro,                    'argon', null],
+              [macro.units_size_s_par_01_macro,                      'argon', null],
+              [macro.units_size_s_ship_arg_military_01_macro,        'argon', null],
+              [macro.units_size_s_ship_ls_terran_01_macro,           'argon', null],
+              [macro.units_size_s_ship_old_01_macro,                 'argon', null],
+              [macro.units_size_s_ship_old_02_macro,                 'argon', null],
+              [macro.units_size_s_ship_old_03_macro,                 'argon', null],
+              [macro.units_size_s_ship_old_04_macro,                 'argon', null],
+              [macro.units_size_s_ship_pirate_04_macro,              'argon', null],
+              [macro.units_size_s_ship_pirate_05_macro,              'argon', null],
+              [macro.units_size_s_ship_pirate_06_macro,              'argon', null],
+              [macro.units_size_s_ship_pirate_07_macro,              'argon', null],
+              [macro.units_size_s_split_m8_macro,                    'argon', null],
+              [macro.units_size_s_split_p2_macro,                    'argon', null],
+              [macro.units_size_s_te_05_macro,                       'argon', null],
+              [macro.units_size_s_te_06_macro,                       'argon', null],
+              [macro.units_size_s_te_m8_macro,                       'argon', null],
+              [macro.units_size_s_te_m8p_macro,                      'argon', null],
+              [macro.units_size_s_xenon_swarm_attack_drone_00_macro, 'argon', null],
+              [macro.units_size_s_xenon_swarm_attack_drone_03_macro, 'argon', null]
             ],
             $trade = [
+              [macro.units_size_s_ship_old_05_macro, 'argon', null]
             ],
             $mine = [
             ],
