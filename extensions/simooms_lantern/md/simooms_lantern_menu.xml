@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <diff>
   <add sel="//cue[@name='SimoomsLantern_summon_ship_player_unique']//add_player_choice_return" pos="before">
-    <add_player_choice_sub text="'Lost Sectors'" position="right" section="SimoomsLanternLS_summon_ship" comment="Lost Sectors"/>
+    <add_player_choice_sub text="'Lost Sectors'" position="right" section="SimoomsLanternLS_choosesize" comment="Lost Sectors"/>
   </add>
 </diff>
